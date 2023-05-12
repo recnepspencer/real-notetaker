@@ -37,7 +37,7 @@ const Content: React.FC = () => {
     undefined, // no input
     {
       enabled: sessionData?.user !== undefined,
-      onSuccess: (data: any[]) => {
+      onSuccess: (data) => {
         setSelectedTopic(selectedTopic ?? data[0] ?? null);
       },
     }
